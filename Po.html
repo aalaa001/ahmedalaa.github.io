@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Alaa - Machine Learning Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Fade-in animation */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Hover effect for cards */
+        .hover-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Tooltip styling */
+        .tooltip {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .tooltip::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #333333;
+            color: white;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+            z-index: 10;
+        }
+
+        .tooltip:hover::after {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
+</head>
+<body class="bg-[#F5F5F5] font-sans">
+    <!-- Header -->
+    <header id="header" class="bg-[#2E5A66] text-white py-6 transition-all duration-300">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold fade-in">Ahmed Alaa</h1>
+            <p class="text-lg mt-2 fade-in">Machine Learning & AI Engineer</p>
+            <div class="mt-4 flex justify-center space-x-4 fade-in">
+                <a href="mailto:a.alaamohamed.swe@gmail.com" class="hover:underline">a.alaamohamed.swe@gmail.com</a>
+                <span>|</span>
+                <a href="tel:+201062269358" class="hover:underline">+20 106 226 9358</a>
+                <span>|</span>
+                <a href="https://www.linkedin.com/in/ahmed-alaa-328833284/" class="hover:underline">LinkedIn Profile</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Professional Summary -->
+        <section class="mb-12 scroll-reveal">
+            <h2 class="text-2xl font-semibold text-[#4A919E] mb-4">Professional Summary</h2>
+            <p class="text-[#333333]">
+                Aspiring Machine Learning and AI Engineer with a strong foundation in programming, data structures, and algorithms. Currently enrolled in the Future Skills Academy by UNDP RBAS and MBRF, pursuing specialized training in machine learning and artificial intelligence through courses like the Machine Learning Introduction Specialization and Artificial Intelligence Engineer 1. Additionally, advancing skills via DataCamp’s Machine Learning Scientist with Python track. Passionate about building scalable AI solutions to drive data-driven innovation.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-12 scroll-reveal">
+            <h2 class="text-2xl font-semibold text-[#4A919E] mb-4">Education</h2>
+            <div class="bg-[#FAFAFA] p-6 rounded-lg shadow-sm border border-gray-100 hover-card">
+                <h3 class="text-xl font-medium text-[#333333]">Helwan University</h3>
+                <p class="text-[#4A4A4A]">Bachelor of Computer Science | Expected Graduation: 2027</p>
+                <p class="text-[#4A4A4A] mt-2">Specialization: Software Development, Data Structures, and Algorithms</p>
+                <p class="text-[#4A4A4A] mt-2">Relevant Coursework:</p>
+                <ul class="list-disc list-inside text-[#4A4A4A]">
+                    <li>Object-Oriented Programming</li>
+                    <li>Software Engineering Principles</li>
+                    <li>Data Structures</li>
+                    <li>Algorithm Design</li>
+                    <li>Database Management Systems</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Training -->
+        <section class="mb-12 bg-[#E6F0FA] py-8 scroll-reveal">
+            <h2 class="text-2xl font-semibold text-[#4A919E] mb-4 px-4">Training & Certifications</h2>
+            <div class="space-y-6 px-4">
+                <div class="bg-[#FAFAFA] p-6 rounded-lg shadow-sm border border-gray-100 hover-card">
+                    <h3 class="text-lg font-medium text-[#333333]">Future Skills Academy (UNDP RBAS & MBRF)</h3>
+                    <p class="text-[#4A4A4A] mt-2">
+                        Enrolled in the Future Skills Academy, a collaboration between UNDP RBAS and MBRF, to bridge the digital divide and acquire advanced technical skills for the evolving job market. Focused on tailored learning experiences in machine learning and AI.
+                    </p>
+                    <p class="text-[#4A4A4A] mt-2"><strong>Courses:</strong></p>
+                    <ul class="list-disc list-inside text-[#4A4A4A]">
+                        <li><strong>Machine Learning Introduction Specialization (Coursera):</strong> Mastering supervised learning, regression, and model evaluation using Python and scikit-learn.</li>
+                        <li><strong>Artificial Intelligence Engineer 1:</strong> Gaining expertise in AI fundamentals, neural networks, and practical AI applications.</li>
+                    </ul>
+                </div>
+                <div class="bg-[#FAFAFA] p-6 rounded-lg shadow-sm border border-gray-100 hover-card">
+                    <h3 class="text-lg font-medium text-[#333333]">DataCamp: Machine Learning Scientist with Python</h3>
+                    <p class="text-[#4A4A4A] mt-2">
+                        Actively pursuing the Machine Learning Scientist track, covering advanced machine learning algorithms, feature engineering, model evaluation, and deployment using Python, scikit-learn, and TensorFlow.
+                    </p>
+                    <p class="text-[#4A4A4A] mt-2"><strong>Status:</strong> In Progress</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills -->
+        <section class="mb-12 scroll-reveal">
+            <h2 class="text-2xl font-semibold text-[#4A919E] mb-4">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-[#FAFAFA] p-6 rounded-lg shadow-sm border border-gray-100 hover-card">
+                    <h3 class="text-lg font-medium text-[#333333]">Machine Learning & AI</h3>
+                    <ul class="list-disc list-inside text-[#4A4A4A] mt-2">
+                        <li class="tooltip" data-tooltip="Supervised learning, unsupervised learning, and reinforcement learning techniques">Supervised, Unsupervised, Reinforcement Learning</li>
+                        <li class="tooltip" data-tooltip="Techniques for data preprocessing and model optimization">Feature Engineering, Model Evaluation, Hyperparameter Tuning</li>
+                        <li class="tooltip" data-tooltip="Python libraries for machine learning and data analysis">Libraries: scikit-learn, TensorFlow, Keras, Pandas, NumPy</li>
+                    </ul>
+                </div>
+                <div class="bg-[#FAFAFA] p-6 rounded-lg shadow-sm border border-gray-100 hover-card">
+                    <h3 class="text-lg font-medium text-[#333333]">Programming & Development</h3>
+                    <ul class="list-disc list-inside text-[#4A4A4A] mt-2">
+                        <li class="tooltip" data-tooltip="Core programming languages for software and ML development">Languages: Python, Java, C++</li>
+                        <li class="tooltip" data-tooltip="Technologies for building web interfaces">Web Technologies: HTML, CSS, JavaScript</li>
+                        <li class="tooltip" data-tooltip="Tools for collaborative code management">Version Control: Git, GitHub</li>
+                    </ul>
+                </div>
+                <div class="bg-[#FAFAFA] p-6 rounded-lg shadow-sm border border-gray-100 hover-card">
+                    <h3 class="text-lg font-medium text-[#333333]">Testing & Automation</h3>
+                    <ul class="list-disc list-inside text-[#4A4A4A] mt-2">
+                        <li class="tooltip" data-tooltip="Tools for automating web and API testing">Test Automation: Selenium WebDriver, Postman</li>
+                        <li class="tooltip" data-tooltip="Frameworks for unit and integration testing">Testing Frameworks: JUnit, TestNG</li>
+                        <li class="tooltip" data-tooltip="Tools for API testing and automation">API Testing: Postman, Newman</li>
+                        <li class="tooltip" data-tooltip="Development methodologies for quality assurance">Methodologies: Agile, Scrum, TDD</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages -->
+        <section class="mb-12 scroll-reveal">
+            <h2 class="text-2xl font-semibold text-[#4A919E] mb-4">Languages</h2>
+            <div class="bg-[#FAFAFA] p-6 rounded-lg shadow-sm border border-gray-100 hover-card">
+                <p class="text-[#4A4A4A]"><strong>English:</strong> Professional Working Proficiency</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#2E5A66] text-white py-4">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2025 Ahmed Alaa. All rights reserved.</p>
+            <div class="mt-2">
+                <a href="mailto:a.alaamohamed.swe@gmail.com" class="hover:underline mx-2">Email</a>
+                <a href="https://www.linkedin.com/in/ahmed-alaa-328833284/" class="hover:underline mx-2">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Reveal Effect
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('.scroll-reveal');
+            
+            const observerOptions = {
+                threshold: 0.1
+            };
+            
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+
+        // Dynamic Header Effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.style.backgroundColor = '#1E3F4A'; // Darker shade of header color
+            } else {
+                header.style.backgroundColor = '#2E5A66'; // Original header color
+            }
+        });
+    </script>
+</body>
+</html>
